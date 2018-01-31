@@ -1,10 +1,14 @@
 <?php
-//mysql params
-$username = 'root';
+
+/**mysql params - enter your username & pass for MYSQL server**/
+
+$username = '';
 $password = '';
+$host = 'localhost';
+$dbname = 'comments';
 
 try {
-    $dbh = new PDO('mysql:host=localhost;dbname=comments', $username, $password);
+    $dbh = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 
     if ($_POST['name'] & $_POST['message']) {
         $name = htmlspecialchars(stripslashes($_POST['name']));
