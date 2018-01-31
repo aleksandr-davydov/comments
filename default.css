@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 13px;
+    color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #374353;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+a {
+    color: #eee;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#page {
+    width: 800px;
+    margin: 20px auto;
+}
+
+.block {
+    background-color: #269abc;
+    margin-bottom: 25px;
+    padding: 30px;
+}
+
+.block_main {
+    background-color: #7b8b98;
+    text-shadow: 1px 1px 0 black;
+    padding: 30px;
+}
+
+.block_main p {
+    margin: 20px 0 20px 0;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: normal;
+    position: relative;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.rounded {
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+}
+
+.block_footer {
+    float: right;
+    position: relative;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+}
+
+.name {
+    font-weight: bold;
+    width: 100px;
+    display: inline-block;
+}
+
+.date {
+    color: #843534;
+    font-family: Verdana;
+    font-size: 9px;
+    margin-right: 10px;
+}
+
+.message {
+    font-style: italic;
+    margin-left: 10px;
+}
+
+input {
+    margin: 10px 5px 10px 5px;
+}
+
+.message {
+    width: 300px;
+}
+
+.input {
+    outline: none;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input:valid:not(:placeholder-shown) {
+    border-color: green;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+
+input:invalid:not(:placeholder-shown) + .form__error {
+    display: block;
+}
